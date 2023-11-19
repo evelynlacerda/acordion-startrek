@@ -1,0 +1,87 @@
+body
+    background: #010e1f
+    background-size: cover
+    width: 100%
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+
+.box
+    position: relative
+    display: flex
+    flex-direction: column
+    width: 90rem
+    background: #252D37
+    border-radius: 4rem
+    padding: 18rem 4.8rem 4.8rem
+
+    .startrek
+        position: absolute
+        display: flex
+        flex-direction: column
+        align-items: center
+        top: -58px
+        left: 50%
+        transform: translateX(-50%)
+
+        img:first-child
+            width: 12rem
+            height: 12rem
+            margin-bottom: 2rem
+
+        img:last-child
+            width: 24rem
+
+    .info-box
+        display: flex
+        flex-direction: column
+        width: 100%
+
+        .drop-title
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 0 1rem 0 0
+
+            h2
+                font-family: 'Goldman', sans-serif
+                color: #fff
+                font-size: 2rem
+                font-weight: 400
+                text-transform: uppercase
+
+            input[type="checkbox"]
+                appearance: none
+                width: 1.6rem
+                height: 100%
+                transition: .3s ease-in-out
+                cursor: pointer
+
+            input:checked[type="checkbox"]
+                transform: rotate(-180deg)
+
+            input[type="checkbox"]:before
+                content: url('../img/arrowdown.svg')
+                transition: .3s ease-in-out
+
+            input:checked[type="checkbox"]:before
+                content: url('../img/arrowup.svg')
+
+
+        .info-text
+            display: none
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            font-size: 1.6rem
+            color: #ddd
+            line-height: 2.4rem
+            text-align: justify
+            margin: 1.6rem 0 0
+
+        .show
+            display: block
+
+        hr
+            border: 1px solid rgba(255, 255, 255, .1)
+            margin: 2.4rem 0
+
